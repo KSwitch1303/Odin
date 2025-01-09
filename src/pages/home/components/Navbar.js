@@ -33,6 +33,9 @@ export default function HomeNav() {
       window.removeEventListener('resize', handleWindowSizeChange);
     }
   }, [])
+  useEffect(() => {
+    handleWindowSizeChange()
+  }, [])
   return (
     <Disclosure as="nav" className="text-black">
       <div className="max-w-9xl py-2 sm:px-6 lg:px-8">
